@@ -4,8 +4,6 @@ class RepositoriesController < ApplicationController
 
     @username = session[:username]
     @repos_array = repo_service.get_repos
-
-    render :index
   end
 
   def create
